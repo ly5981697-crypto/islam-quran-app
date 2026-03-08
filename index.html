@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تطبيق إسلامي</title>
+<style>
+body{
+font-family: Arial;
+direction: rtl;
+text-align:center;
+background:#0b3d2e;
+color:white;
+padding:20px;
+}
+button{
+padding:10px 20px;
+margin:10px;
+font-size:18px;
+border:none;
+border-radius:10px;
+background:#1fa67a;
+color:white;
+}
+.box{
+background:#083c2d;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>📖 تطبيق القرآن والأذكار</h1>
+
+<button onclick="showQuran()">القرآن</button>
+<button onclick="showAzkar()">الأذكار</button>
+<button onclick="showPrayer()">مواقيت الصلاة</button>
+
+<div class="box" id="content">
+مرحبا بك في التطبيق الإسلامي
+</div>
+
+<script>
+
+function showQuran(){
+document.getElementById("content").innerHTML =
+"سورة الفاتحة:<br><br>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ<br>الرَّحْمَٰنِ الرَّحِيمِ<br>مَالِكِ يَوْمِ الدِّينِ";
+}
+
+function showAzkar(){
+document.getElementById("content").innerHTML =
+"أذكار:<br><br>سبحان الله<br>الحمد لله<br>الله أكبر<br>لا إله إلا الله";
+}
+
+function showPrayer(){
+document.getElementById("content").innerHTML =
+"مواقيت الصلاة:<br><br>الفجر 5:00<br>الظهر 12:30<br>العصر 3:45<br>المغرب 6:20<br>العشاء 7:45";
+}
+
+</script>
+
+</body>
+  </html>
